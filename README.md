@@ -1,6 +1,8 @@
 # Curso de C++
 
-Bem-vindo ao repositório do curso de C++. Aqui você encontrará materiais de apoio, exercícios e pequenos projetos que acompanham a sua evolução ao longo dos módulos. O objetivo é oferecer uma base organizada para estudos, revisões e consultas rápidas enquanto você progride na linguagem.
+Bem-vindo ao meu repositório do curso de C++ da WR Kits.
+Este espaço reúne anotações, exercícios e pequenos projetos desenvolvidos ao longo das aulas.
+O objetivo é manter uma estrutura organizada e prática para acompanhar o aprendizado, revisar conceitos e consultar exemplos de código de forma rápida e eficiente.
 
 ## Estrutura do repositório
 
