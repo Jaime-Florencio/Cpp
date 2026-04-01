@@ -1,60 +1,60 @@
-# Repositório de Estudos de C++
+# Curso de C++ - Repositório de Estudos
 
-Estrutura pensada para estudo, revisão e evolução prática no GitHub.
+Estrutura limpa e escalável para estudar por módulo, revisar por aula e manter exemplos, exercícios e projetos organizados.
 
-## Visão geral
+## Índice geral
 
-- `curso-cpp/topicos/`: trilha principal do curso (14 tópicos, 5 aulas por tópico)
-- `curso-cpp/projects/`: projetos práticos finais (separados das aulas)
-- `curso-cpp/templates/`: modelos reutilizáveis para novas aulas e projetos
+- [Estrutura do repositório](#estrutura-do-repositório)
+- [Módulos](#módulos)
+- [Projetos](#projetos)
+- [Templates](#templates)
+- [Convenções](#convenções)
 
-## Índice do curso
+## Estrutura do repositório
 
-1. [01-introducao](./curso-cpp/topicos/01-introducao)
-2. [02-variaveis-e-tipos](./curso-cpp/topicos/02-variaveis-e-tipos)
-3. [03-operadores](./curso-cpp/topicos/03-operadores)
-4. [04-controle-de-fluxo](./curso-cpp/topicos/04-controle-de-fluxo)
-5. [05-funcoes](./curso-cpp/topicos/05-funcoes)
-6. [06-arrays-e-strings](./curso-cpp/topicos/06-arrays-e-strings)
-7. [07-ponteiros-e-referencias](./curso-cpp/topicos/07-ponteiros-e-referencias)
-8. [08-structs-e-enums](./curso-cpp/topicos/08-structs-e-enums)
-9. [09-orientacao-a-objetos](./curso-cpp/topicos/09-orientacao-a-objetos)
-10. [10-heranca-e-polimorfismo](./curso-cpp/topicos/10-heranca-e-polimorfismo)
-11. [11-excecoes-e-debug](./curso-cpp/topicos/11-excecoes-e-debug)
-12. [12-stl](./curso-cpp/topicos/12-stl)
-13. [13-arquivos-e-modularizacao](./curso-cpp/topicos/13-arquivos-e-modularizacao)
-14. [14-projeto-e-boas-praticas](./curso-cpp/topicos/14-projeto-e-boas-praticas)
+```text
+.
+├── curso-cpp/
+│   ├── modules/
+│   │   ├── 01-introducao-cpp-orientacao-a-objeto/
+│   │   ├── 02-instrucoes-de-controle/
+│   │   ├── ...
+│   │   └── 14-topicos-adicionais/
+│   ├── projects/
+│   │   ├── general/
+│   │   └── embedded/
+│   └── templates/
+├── docs/
+│   └── conventions.md
+└── CMakeLists.txt
+```
 
-## Estrutura padrão por aula
+## Módulos
 
-Cada aula segue este formato:
+1. [Módulo 1 - Introdução à C++ e Orientação a Objeto](./curso-cpp/modules/01-introducao-cpp-orientacao-a-objeto/README.md)
+2. [Módulo 2 - Instruções de Controle](./curso-cpp/modules/02-instrucoes-de-controle/README.md)
+3. [Módulo 3 - Funções e Arrays](./curso-cpp/modules/03-funcoes-e-arrays/README.md)
+4. [Módulo 4 - Ponteiros](./curso-cpp/modules/04-ponteiros/README.md)
+5. [Módulo 5 - Classes](./curso-cpp/modules/05-classes/README.md)
+6. [Módulo 6 - Herança e Polimorfismo](./curso-cpp/modules/06-heranca-e-polimorfismo/README.md)
+7. [Módulo 7 - Templates e Sobrecarga de Operadores](./curso-cpp/modules/07-templates-e-sobrecarga-de-operadores/README.md)
+8. [Módulo 8 - I/O de Fluxo e Memória Dinâmica](./curso-cpp/modules/08-io-de-fluxo-e-memoria-dinamica/README.md)
+9. [Módulo 9 - Processamento de Arquivos](./curso-cpp/modules/09-processamento-de-arquivos/README.md)
+10. [Módulo 10 - Classe string e Programação Web](./curso-cpp/modules/10-string-e-programacao-web/README.md)
+11. [Módulo 11 - Pesquisa, Classificação e Estruturas de Dados](./curso-cpp/modules/11-pesquisa-classificacao-e-estruturas-de-dados/README.md)
+12. [Módulo 12 - Estruturas, Bits e Outros](./curso-cpp/modules/12-estruturas-bits-e-outros/README.md)
+13. [Módulo 13 - Sistemas Embarcados](./curso-cpp/modules/13-sistemas-embarcados/README.md)
+14. [Módulo 14 - Tópicos Adicionais](./curso-cpp/modules/14-topicos-adicionais/README.md)
 
-- `README.md` → teoria e resumo
-- `exemplos/` → códigos de referência
-- `exercicios/` → desafios da aula (quando houver)
+## Projetos
 
-> Decisão prática: manter `exercicios/` em todas as aulas deixa a navegação previsível.
+- `curso-cpp/projects/general/` -> projetos gerais.
+- `curso-cpp/projects/embedded/` -> projetos embarcados.
 
-## Convenção de nomes para arquivos `.cpp`
+## Templates
 
-- Exemplos: `01-entrada-saida.cpp`, `02-if-else.cpp`
-- Exercícios: `ex-01.cpp`, `ex-02.cpp`
-- Projetos: `main.cpp`, `modulo-conversao.cpp`, `menu.cpp`
+Use `curso-cpp/templates/` para acelerar criação de novas aulas, exercícios e projetos.
 
-## Padrão para exercícios e projetos
+## Convenções
 
-- Exercício:
-  - `enunciado.md`
-  - `ex-01.cpp`
-- Projeto:
-  - `README.md`
-  - `src/`
-  - `docs/`
-  - `include/` (opcional)
-
-## CMake no futuro (sem complicar agora)
-
-Quando quiser escalar, use um `CMakeLists.txt` por projeto em `curso-cpp/projects/`.
-Um template inicial já foi adicionado em:
-
-- [`curso-cpp/templates/projeto/CMakeLists.txt`](./curso-cpp/templates/projeto/CMakeLists.txt)
+Veja [`docs/conventions.md`](./docs/conventions.md).

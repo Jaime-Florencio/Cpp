@@ -1,11 +1,4 @@
-# Projetos práticos
+# Projetos
 
-Use esta pasta para os projetos finais do curso.
-
-## Projetos
-- [01-conversor-de-temperatura](./01-conversor-de-temperatura)
-
-## Padrão sugerido por projeto
-- `README.md`: escopo, requisitos e checklist
-- `src/`: código-fonte
-- `docs/`: decisões e anotações
+- `general/`: projetos gerais de C++ (console, algoritmos, mini-sistemas).
+- `embedded/`: projetos de sistemas embarcados (AVR, ESP32, MSP430, STM32 etc.).
