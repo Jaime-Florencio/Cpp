@@ -1,36 +1,60 @@
-# Curso de C++
+# Repositório de Estudos de C++
 
-Bem-vindo ao meu repositório de estudos.
-Este espaço reúne anotações, exercícios e projetos desenvolvidos ao longo das aulas.
+Estrutura pensada para estudo, revisão e evolução prática no GitHub.
 
-## Estrutura do repositório
+## Visão geral
 
-- **`/aulas`**: anotações, resumos teóricos e links importantes de cada módulo.
-- **`/exercicios`**: exercícios práticos organizados por módulo e aula.
-- **`/projetos`**: projetos práticos (incluindo a trilha de microcontroladores).
-- **`/docs`**: documentação geral, organização e materiais de apoio.
+- `curso-cpp/topicos/`: trilha principal do curso (14 tópicos, 5 aulas por tópico)
+- `curso-cpp/projects/`: projetos práticos finais (separados das aulas)
+- `curso-cpp/templates/`: modelos reutilizáveis para novas aulas e projetos
 
-## Índice de módulos (C++)
+## Índice do curso
 
-1. [Módulo 01 – Introdução](./aulas/modulo01_introducao)
+1. [01-introducao](./curso-cpp/topicos/01-introducao)
+2. [02-variaveis-e-tipos](./curso-cpp/topicos/02-variaveis-e-tipos)
+3. [03-operadores](./curso-cpp/topicos/03-operadores)
+4. [04-controle-de-fluxo](./curso-cpp/topicos/04-controle-de-fluxo)
+5. [05-funcoes](./curso-cpp/topicos/05-funcoes)
+6. [06-arrays-e-strings](./curso-cpp/topicos/06-arrays-e-strings)
+7. [07-ponteiros-e-referencias](./curso-cpp/topicos/07-ponteiros-e-referencias)
+8. [08-structs-e-enums](./curso-cpp/topicos/08-structs-e-enums)
+9. [09-orientacao-a-objetos](./curso-cpp/topicos/09-orientacao-a-objetos)
+10. [10-heranca-e-polimorfismo](./curso-cpp/topicos/10-heranca-e-polimorfismo)
+11. [11-excecoes-e-debug](./curso-cpp/topicos/11-excecoes-e-debug)
+12. [12-stl](./curso-cpp/topicos/12-stl)
+13. [13-arquivos-e-modularizacao](./curso-cpp/topicos/13-arquivos-e-modularizacao)
+14. [14-projeto-e-boas-praticas](./curso-cpp/topicos/14-projeto-e-boas-praticas)
 
-> Os módulos seguintes serão adicionados conforme o avanço do curso.
+## Estrutura padrão por aula
 
-## Trilha de Microcontroladores
+Cada aula segue este formato:
 
-Pastas criadas para organizar os próximos estudos e projetos:
+- `README.md` → teoria e resumo
+- `exemplos/` → códigos de referência
+- `exercicios/` → desafios da aula (quando houver)
 
-- [10.0 PIC](./projetos/microcontroladores/pic)
-- [10.1 PIC18](./projetos/microcontroladores/pic18)
-- [10.2 dsPIC](./projetos/microcontroladores/dspic)
-- [10.3 PICAVR](./projetos/microcontroladores/picavr)
-- [10.4 STM32](./projetos/microcontroladores/stm32)
-- [10.5 ESP32](./projetos/microcontroladores/esp32)
+> Decisão prática: manter `exercicios/` em todas as aulas deixa a navegação previsível.
 
-## Guia de organização
+## Convenção de nomes para arquivos `.cpp`
 
-Consulte o guia com padrão de pastas e checklist:
+- Exemplos: `01-entrada-saida.cpp`, `02-if-else.cpp`
+- Exercícios: `ex-01.cpp`, `ex-02.cpp`
+- Projetos: `main.cpp`, `modulo-conversao.cpp`, `menu.cpp`
 
-- [Organização do repositório](./docs/ORGANIZACAO_REPOSITORIO.md)
+## Padrão para exercícios e projetos
 
-Bons estudos!
+- Exercício:
+  - `enunciado.md`
+  - `ex-01.cpp`
+- Projeto:
+  - `README.md`
+  - `src/`
+  - `docs/`
+  - `include/` (opcional)
+
+## CMake no futuro (sem complicar agora)
+
+Quando quiser escalar, use um `CMakeLists.txt` por projeto em `curso-cpp/projects/`.
+Um template inicial já foi adicionado em:
+
+- [`curso-cpp/templates/projeto/CMakeLists.txt`](./curso-cpp/templates/projeto/CMakeLists.txt)
