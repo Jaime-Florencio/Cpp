@@ -1,0 +1,200 @@
+# 📘 Aula – Classe, Vetor e Laço `while` em C++
+
+## 🎯 Objetivo da aula
+
+Aprender a:
+
+* Criar uma **classe em C++**
+* Usar **atributos (**``**)**
+* Criar **métodos (**``**)**
+* Utilizar **vetor**
+* Aplicar **laço de repetição **``
+* Organizar a lógica de um programa
+
+---
+
+## 🧠 1. Conceito de Classe
+
+Uma classe é um **molde** que define:
+
+* **atributos (dados)** → características do objeto
+* **métodos (funções)** → ações do objeto
+
+```cpp
+class Logica
+{
+private:
+    int numeros[6];
+
+public:
+    void ler_numeros();
+    void mostrar_resultados();
+};
+```
+
+---
+
+## 🔐 2. Private vs Public
+
+### 🔒 `private`
+
+* guarda os dados internos
+* não pode ser acessado diretamente de fora
+
+👉 exemplo:
+
+```cpp
+int numeros[6];
+```
+
+---
+
+### 🔓 `public`
+
+* funções que permitem usar a classe
+
+👉 exemplo:
+
+```cpp
+void ler_numeros();
+```
+
+---
+
+## 📦 3. Vetor
+
+```cpp
+int numeros[6];
+```
+
+👉 significa:
+
+* vetor com **6 posições**
+* índices vão de `0` até `5`
+
+⚠️ Regra importante:
+
+> Se quero N elementos → vetor[N]
+
+---
+
+## 🔁 4. Laço `while`
+
+O `while` repete enquanto a condição for verdadeira.
+
+```cpp
+int i = 0;
+while(i < 6)
+{
+    cin >> numeros[i];
+    i++;
+}
+```
+
+---
+
+### 🧠 Lógica do `while`
+
+1. inicializa → `i = 0`
+2. verifica → `i < 6`
+3. executa
+4. incrementa → `i++`
+
+⚠️ Se esquecer o `i++` → loop infinito
+
+---
+
+## 📥 5. Entrada de dados
+
+```cpp
+void ler_numeros()
+{
+    int i = 0;
+    while(i < 6)
+    {
+        cin >> numeros[i];
+        i++;
+    }
+}
+```
+
+👉 Preenche o vetor com valores do usuário
+
+---
+
+## ⚙️ 6. Processamento
+
+```cpp
+int soma = numeros[0] + numeros[1];
+int subtracao = numeros[2] - numeros[3];
+int multiplicacao = numeros[4] * numeros[5];
+```
+
+---
+
+## 📤 7. Saída de dados
+
+```cpp
+cout << "resultado da soma: " << soma << endl;
+cout << "resultado da subtracao: " << subtracao << endl;
+cout << "resultado da multiplicacao: " << multiplicacao << endl;
+```
+
+---
+
+## 🚀 8. Função principal (`main`)
+
+```cpp
+int main()
+{
+    Logica logica;
+    logica.ler_numeros();
+    logica.mostrar_resultados();
+    return 0;
+}
+```
+
+---
+
+## 🔥 9. Fluxo completo do programa
+
+1. cria objeto
+2. lê os dados
+3. processa
+4. mostra resultados
+
+---
+
+## ⚠️ 10. Erros comuns
+
+❌ vetor com tamanho errado
+❌ esquecer `i++` no while
+❌ não usar `cout` para mostrar resultado
+❌ não fechar a classe com `};`
+
+---
+
+## 🧠 11. Insight importante
+
+* **atributos = estado interno**
+* **métodos = ações**
+* **while = repetição controlada**
+
+---
+
+## 📚 Referência da aula
+
+Baseado no exercício de repetição com `while` apresentado no material do curso 
+
+---
+
+## 💡 Resumo final (pra lembrar rápido)
+
+* Classe organiza o código
+* Private protege os dados
+* Public permite usar
+* Vetor guarda múltiplos valores
+* While repete com condição
+* Sempre lembrar de atualizar a variável do loop
+
+---
